@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  worker:
+    build: .
+    environment:
+      API_ID: $API_ID  # defaults to None
+      API_HASH: $API_HASH
+      BOT_TOKEN: $BOT_TOKEN
+      TG_USER_SESSION: $TG_USER_SESSION
+      MAINCHANNEL_ID: $MAINCHANNEL_ID
+      ADMINS: $ADMINS
