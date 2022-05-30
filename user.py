@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# @trojanzhex
 
 
 from pyrogram import (
@@ -10,9 +7,8 @@ from pyrogram import (
 
 from config import (
     API_HASH,
-    APP_ID,
+    API_ID,
     LOGGER,
-    TG_BOT_WORKERS,
     TG_USER_SESSION
 )
 
@@ -23,7 +19,7 @@ class User(Client):
             TG_USER_SESSION,
             api_hash=API_HASH,
             api_id=APP_ID,
-            workers=TG_BOT_WORKERS
+            workers=4
         )
         self.LOGGER = LOGGER
 
