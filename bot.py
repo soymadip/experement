@@ -9,7 +9,7 @@ from config import (
     APP_ID,
     LOGGER,
     TG_BOT_SESSION,
-    TG_BOT_TOKEN
+    BOT_TOKEN
 )
 
 from user import User
@@ -28,8 +28,8 @@ class Bot(Client):
             plugins={
                 "root": "plugins"
             },
-            workers=TG_BOT_WORKERS,
-            bot_token=TG_BOT_TOKEN
+            workers=4,
+            bot_token=BOT_TOKEN
         )
         self.LOGGER = LOGGER
 
