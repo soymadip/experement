@@ -24,7 +24,7 @@ class Bot(Client):
         super().__init__(
             TG_BOT_SESSION,
             api_hash=API_HASH,
-            api_id=APP_ID,
+            api_id=API_ID,
             plugins={
                 "root": "plugins"
             },
